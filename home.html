@@ -146,11 +146,17 @@
                 <a href="Mycv.pdf" download class="btn btn2" >Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form action="connect.php" method="post">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required>
+                    </div>
+                    <div class="input-box">
+                        <!--<input type="number" name="mobile_number" placeholder="Mobile Number" required>
+                       <input type="text" name="subject" placeholder="Email Subject" required>-->
+                    </div>
+                    <textarea name="message" cols="30" rows="10" placeholder="message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
                 </form>
                 <span id="msg"></span>
             </div>
